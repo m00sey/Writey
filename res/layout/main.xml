@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	
+	<TextView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="@string/hello"
+		android:textSize="25sp" />
+		
+	<EditText android:layout_width="fill_parent"
+		android:background="@android:drawable/editbox_background"
+		android:lines="5" android:layout_height="match_parent"
+		android:layout_gravity="top" android:id="@+id/writeTag" android:text="@string/sampleText"
+		android:gravity="top" />
+</LinearLayout>
