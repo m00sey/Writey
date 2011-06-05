@@ -69,10 +69,12 @@ public class Write extends Activity {
     	v.vibrate(100);
     	Tag tag = intent.getParcelableExtra(NfcAdapter.EXTRA_TAG);
     	EditText edit = (EditText) findViewById(R.id.writeTag);
+    	EditText dataTypeEntry = (EditText) findViewById(R.id.editText1);
     	
         byte[] textBytes = edit.getText().toString().getBytes();
+        byte[] dataTypeBytes = dataTypeEntry.getText().toString().getBytes(); 
         
-        NdefRecord textRecord = new NdefRecord(NdefRecord.TNF_MIME_MEDIA, "text/chariot".getBytes(),
+        NdefRecord textRecord = new NdefRecord(NdefRecord.TNF_MIME_MEDIA, dataTypeBytes,
                 new byte[] {}, textBytes);
         NdefMessage message = new NdefMessage(new NdefRecord[] {
             textRecord

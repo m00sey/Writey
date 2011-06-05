@@ -3,4 +3,5 @@
     <string name="hello">Compose a message then tap a tag to write.</string>
     <string name="app_name">Writey</string>
     <string name="sampleText">Sample Text</string>
+    <string name="data_type">text/chariot</string>
 </resources>
